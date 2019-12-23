@@ -10,4 +10,4 @@ from django.http import HttpResponse
 #     return render(request, 'home.html', users)
 
 def index(request):
-    return HttpResponse('<h1>Welcome Cafafans Coders!</h1>')
+    return render(request, 'index.html')

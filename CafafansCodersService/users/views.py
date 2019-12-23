@@ -10,4 +10,5 @@ from django.http import HttpResponse
 #     return render(request, 'home.html', users)
 
 def users(request):
-    return HttpResponse('<h1>Hello World Users</h1>')
+    # return HttpResponse('<h1>Hello World Users</h1>')
+    return render(request, 'users/index.html')
