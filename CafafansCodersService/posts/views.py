@@ -10,4 +10,4 @@ from django.http import HttpResponse
 #     return render(request, 'home.html', users)
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'posts/index.html')
