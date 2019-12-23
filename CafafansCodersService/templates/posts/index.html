@@ -1,1 +1,15 @@
-<h1> Cafafans Coders Posts!</h1>
+{% extends 'layouts.html' %}
+ 
+{% block content %}
+
+  <div class="container">
+    <ul class="list-group list-group-flush">
+      {% for post in posts %}    
+          <li class="list-group-item"><h2>{{post.author}} <span style="color: gray">{{post.date_posted}}</span></h2> </li>
+          <li class="list-group-item"><h3>{{post.title}} </h3> </li>
+          <li class="list-group-item">{{post.content}}</li>
+        <li class="list-group-item"><h3>{{post.date_posted }} </h3> </li>
+      {% endfor %} 
+    </ul>
+  </div>
+{% endblock content %} 
