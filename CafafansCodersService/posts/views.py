@@ -3,11 +3,6 @@ from django.http import HttpResponse
 # from .models import User
 
 # Create your views here.
-# def index(request):
-#     users = {
-#         'users': User.objects.all()
-#     }
-#     return render(request, 'home.html', users)
 
 posts = [
     {
@@ -28,6 +23,7 @@ posts = [
 
 def index(request):
     posts_data = {
-        'posts': posts
+        'posts': posts,
+        'title': 'Main Posts'
     }
     return render(request, 'posts/index.html', posts_data)
