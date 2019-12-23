@@ -1,0 +1,5 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/Users/cafafanscoders/.local/share/virtualenvs/CafafansCoders-rV_GNMqP/bin/python"
+}
